@@ -10,7 +10,7 @@ public struct SkeletonView<S: Shape> : View {
     
     @State private var isAnimating : Bool = false
     
-    init(shape: S, _color: Color = .gray.opacity(0.3)) {
+    public init(shape: S, _color: Color = .gray.opacity(0.3)) {
         self.shape = shape
         self.color = _color
     }
