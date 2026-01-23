@@ -11,6 +11,8 @@ import SwiftUI
 open class BaseViewModel<Content> : ViewModelProtocol {
     
     @Published public var state: ViewState<Content> = .idle
+    
+    public init() {}
 
     public func setLoading() {
         state = .loading
