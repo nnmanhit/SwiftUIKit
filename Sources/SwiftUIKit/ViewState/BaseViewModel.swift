@@ -8,7 +8,7 @@
 import SwiftUI
 
 @MainActor
-public class BaseViewModel<Content> : ViewModelProtocol {
+open class BaseViewModel<Content> : ViewModelProtocol {
     
     @Published public var state: ViewState<Content> = .idle
 
